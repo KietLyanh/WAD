@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form id="temp conversion">
+      <label for="input temp">Enter the temparature here:</label>
+      <input type="text" id="input temp" name="temp">
+      <br><input type="button" onclick="c_conversion()" value="Convert to Celcius">
+      <input type="button" onclick="f_conversion()" value="Convert to Farenheit">
+      <p id='answer'></p>
+    </form>
+  </body>
+  <script>
+    function c_conversion(){
+      original_temp = document.getElementById("input temp").value;
+      converted_temp = (Number(original_temp)-32)/9*5;
+      document.getElementById('answer').innerHTML='The temparature in celcius is: '+converted_temp;
+    }
+    function f_conversion(){
+      original_temp = document.getElementById("input temp").value;
+      converted_temp = Number(original_temp)/5*9+32;
+      document.getElementById('answer').innerHTML='The temparature in farenheit is: '+converted_temp;
+    }
+  </script>
+</html>

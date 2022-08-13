@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <p>Sign up</p>
+    <p>
+      Username: <input id="username">
+      <br>
+      Password: <input id="password">
+      <br>
+      Retype Password: <input id="retype">
+    </p>
+    <button type="button" onclick="checkPassword()">Submit</button>
+    <p id="output"></p>
+    <script>
+      function checkPassword()
+      {
+        var password = document.getElementById("password").value;
+        var retype = document.getElementById("retype").value;
+        if (retype === password)
+        {
+          document.getElementById("output").innerHTML = "Correct Password";
+        }
+        else
+        {
+          document.getElementById("output").innerHTML = "Invalid Password";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js">
+  </script>
+  <body>
+    <a href='http://www.usth.edu.vn/' id='usth'>USTH Website</a>
+    <button type="button" id="button">Click me</button>
+  </body>
+  <script>
+    $(document).ready(function(){
+      $("button").click(function(){
+        $("a").attr('href', 'http://www.w3resource.com/mysql/mysql-tutorials.php');
+        $("a").text('New link');
+      });
+    });
+  </script>
+</html>

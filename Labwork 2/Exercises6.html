@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js">
+
+  </script>
+
+  <body>
+    <h1>Introduction</h1>
+      <div>
+        <h1>About HTML</h1>
+        <h1>About CSS</h1>
+      </div>
+    <h1>About JavaScript</h1>
+    <button type="button" id="button">Click me</button>
+    <script>
+      $(document).ready(function(){
+
+          $("div h1").css({
+            background: "red",
+          });
+      });
+
+    </script>
+  </body>
+</html>

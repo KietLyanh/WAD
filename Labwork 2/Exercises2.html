@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <button type="button" onclick="find_max()">Generate five random numbers</button>
+    <br><br>
+  </body>
+  <script>
+    function find_max(){
+      let ar = Array(5).fill().map(() => Math.floor(Math.random()*100));
+      let max = ar[0];
+      for (let i=0; i<ar.length(); i++){
+        document.write(ar[i] + "<br>");
+        if (ar[i]>max){
+          max = ar[i];
+        }
+      }
+      alert("Max is " max);
+    }
+  </script>
+</html>

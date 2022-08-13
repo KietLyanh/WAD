@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js">
+  </script>
+  <body>
+    <form>
+      <input id="field1" type="text" value="Field 1">
+      <input id="field2" type="text" value="Field 2">
+    </form>
+  </body>
+  <script>
+    $( "#field1" ).blur(function() {
+    alert( "Lose focus from Field1" );
+  });
+  </script>
+</html>
